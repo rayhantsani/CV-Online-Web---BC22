@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="CV_OnlinePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>models.Client</class>
+    <class>models.WorkAssignment</class>
+    <class>models.Project</class>
+    <class>models.University</class>
+    <class>models.Experience</class>
+    <class>models.QualificationEmployee</class>
+    <class>models.RoleMii</class>
+    <class>models.Major</class>
+    <class>models.Employee</class>
+    <class>models.Achievement</class>
+    <class>models.Training</class>
+    <class>models.Organization</class>
+    <class>models.Education</class>
+    <class>models.Language</class>
+    <class>models.LanguageEmployee</class>
+    <class>models.Qualification</class>
+    <class>models.ProjectEmployee</class>
+    <class>models.MajorUniversity</class>
+    <class>models.Certification</class>
+    <class>models.UserMii</class>
+    <class>models.MiiInfo</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="CV"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="cv"/>
+    </properties>
+  </persistence-unit>
+</persistence>
